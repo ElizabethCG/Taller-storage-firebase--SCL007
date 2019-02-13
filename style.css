@@ -1,0 +1,23 @@
+img {
+  width: 400px;
+}
+
+h2 {
+  text-align: center;
+}
+
+#fileUpload {
+  padding: 10px;
+  background: rgb(79, 16, 226); 
+  display: table;
+  color: #fff;
+  cursor: pointer;
+}
+
+#fileUpload:hover {
+  background-color: rgba(33, 33, 202, 0.822);
+}
+
+input[type="file"] {
+  display: none;
+}

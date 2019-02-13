@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Storage</title>
+</head>
+
+<body>
+  <h2>Mis imágenes favoritas</h2>
+  <div id="des">
+    <label>Agrega una descripción</label>
+    <input type="text" id="dataInput">
+  </div>
+  <div>
+    <label id="fileUpload" for="myImgInput" class="inputTitle">Escoger imagen
+    <input type="file" value="upload" id="myImgInput">
+    </label>
+  </div>
+
+  <div id="container"></div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBYpZ3SAajk8hM5Bz0TAjiuU2xGez5IZiY",
+      authDomain: "storage-12d6e.firebaseapp.com",
+      databaseURL: "https://storage-12d6e.firebaseio.com",
+      projectId: "storage-12d6e",
+      storageBucket: "storage-12d6e.appspot.com",
+      messagingSenderId: "698894855513"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
